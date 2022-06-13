@@ -1,13 +1,19 @@
 const initialState = {
-    SearchMovie: [],
+    movie: [],
+    searchMovie: [],
     isLoading: false,
   };
   const reducers = (state = initialState, action) => {
     switch (action.type) {
+      case "SET_MOVIE" :
+       return {
+         ...state,
+         movie: action.payload,
+       };
      case "SET_SEARCH" :
        return {
          ...state,
-         SearchMovie: action.payload,
+         searchMovie: action.payload,
        };
       case "SET_ISLOADING":
         return {

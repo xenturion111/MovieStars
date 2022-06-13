@@ -57,3 +57,18 @@
 .movie:hover .movie-over{
     transform: translateY(0%)
 }
+
+.tag {
+    background-color: #171717;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.tag.green {
+    color: green;
+}
+.tag.orange {
+    color: orangered
+}
+.tag.red {
+    color: red;
+}
